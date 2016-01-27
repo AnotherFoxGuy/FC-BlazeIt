@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
 
 public class FireObjects : MonoBehaviour
 {
-    public FireSpawnner Pool;
-    private float _live;
-    public ParticleSystem ParticleSystem;
     private ParticleSystem.EmissionModule _emissionModule;
+    private float _live;
     public int On;
+    public ParticleSystem ParticleSystem;
+    public FireSpawnner Pool;
     // Use this for initialization
 
     public void Awake()
@@ -21,9 +19,8 @@ public class FireObjects : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
     }
 
     public void ResetThis()

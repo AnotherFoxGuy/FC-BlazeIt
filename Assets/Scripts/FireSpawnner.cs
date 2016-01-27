@@ -1,18 +1,17 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class FireSpawnner : MonoBehaviour
 {
-    public List<FireObjects> ActiveFire;
-    public List<FireObjects> InactiveFire;
     private int _amountOfActiveFire;
     private NavMeshAgent _player;
+    public List<FireObjects> ActiveFire;
+    public List<FireObjects> InactiveFire;
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
-        _player = GameObject.Find("Player").GetComponent<NavMeshAgent>();
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
         var sp = GameObject.FindGameObjectsWithTag("SpawnPoints");
         for (var i = 0; i < sp.Length; i++)
         {
@@ -25,7 +24,7 @@ public class FireSpawnner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (_amountOfActiveFire < 2)
         {
@@ -44,10 +43,10 @@ public class FireSpawnner : MonoBehaviour
         obj.ParticleSystem.gameObject.SetActive(false);
         InactiveFire.Add(obj);
         ActiveFire.Remove(obj);
-        _amountOfActiveFire = ActiveFire.Count;    
+        _amountOfActiveFire = ActiveFire.Count;
     }
 
-    Vector3 GetClosest()
+    private Vector3 GetClosest()
     {
         var tMin = new Vector3();
         var minDist = Mathf.Infinity;
@@ -55,7 +54,7 @@ public class FireSpawnner : MonoBehaviour
         //print("ActiveFire.Count " + ActiveFire.Count);
         foreach (var af in ActiveFire)
         {
-            float dist = Vector3.Distance(af.transform.position, currentPos);
+            var dist = Vector3.Distance(af.transform.position, currentPos);
             if (dist < minDist)
             {
                 tMin = af.transform.position;

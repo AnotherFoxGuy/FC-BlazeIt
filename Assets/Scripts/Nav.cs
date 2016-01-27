@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Nav : MonoBehaviour
 {
@@ -7,7 +6,7 @@ public class Nav : MonoBehaviour
     private Vector3 _des;
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
         _des = new Vector3(Random.Range(-50, 50), 0, Random.Range(-50, 50));
@@ -15,9 +14,9 @@ public class Nav : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Vector3.Distance(_des,_agent.transform.position) < 5)
+        if (Vector3.Distance(_des, _agent.transform.position) < 5)
         {
             _des = new Vector3(Random.Range(-50, 50), 0, Random.Range(-50, 50));
             _agent.SetDestination(_des);
