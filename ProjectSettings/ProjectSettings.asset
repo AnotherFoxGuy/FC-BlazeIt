@@ -90,14 +90,14 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: com.AnotherFoxGuy.FCbalzeit
-  bundleVersion: 1.01
+  bundleVersion: 1.02
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
   productGUID: caca4cbf3b637214788129f19a9cb28e
-  AndroidBundleVersionCode: 101
+  AndroidBundleVersionCode: 102
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -158,8 +158,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: E:/GitHub/CardboardVRGame/user.keystore
-  AndroidKeyaliasName: fc blazeit
+  AndroidKeystoreName: E:/GitHub/FC-BlazeIt/user.keystore
+  AndroidKeyaliasName: fcblazeit
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 0

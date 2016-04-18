@@ -70,3 +70,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+Assets/StreamingAssets/crashlytics-build.properties
+Assets/StreamingAssets/crashlytics-build.properties.meta

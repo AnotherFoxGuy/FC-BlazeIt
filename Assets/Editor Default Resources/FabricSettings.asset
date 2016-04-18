@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ad9ddc0e5b942a98ec392b434d39bd, type: 3}
+  m_Name: FabricSettings
+  m_EditorClassIdentifier: 
+  email: sietze.greydanus@anotherfoxguy.com
+  rawToken: '{"access_token":"62b666bbeaa1c1246453649d5243b9c8cad1d252a94fef0dcd0c1d78841db9a5","refresh_token":"ee42d557196fd77157e5e9c5e430651c8a5906e9eda9427513a1bf8fb6991a19","token_type":"bearer","expires_in":86400}'
+  organization:
+    Name: AnotherGameCompany
+    Id: 56e169cc4d8f5b7e6800015b
+    ApiKey: 2fbdb52def038ac5255c7de0d8f9490c5b8cfd9c
+    BuildSecret: 4f865a2bf3076d1a3edc7e72cbccaa47cd1be5d0912d528d2cfcffd13e8caa26
+  iconUrl: https://s3.amazonaws.com/assets.crashlytics.com/production/project/5067832/build_version/36836958/icon/20910928/icon.png
+  dashboardUrl: https://www.fabric.io/anothergamecompany/android/apps/com.anotherfoxguy.fcbalzeit
+  flowSequence: 200
+  kit: Crashlytics
+  installedKits:
+  - Name: Crashlytics
+    Installed: 1
+    Enabled: 1
+    Meta: []
